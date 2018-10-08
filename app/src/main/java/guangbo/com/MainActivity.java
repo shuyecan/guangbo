@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
             if(networkInfo!=null&&networkInfo.isAvailable()){
-                Toast.makeText(context, "网络已连接", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "网络已断开", Toast.LENGTH_SHORT).show();
             }else {
                 Toast.makeText(context, "网络未连接", Toast.LENGTH_SHORT).show();
             }
